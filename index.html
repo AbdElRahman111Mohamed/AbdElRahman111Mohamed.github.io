@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>Sign up</title>
     <meta name="descriprtion" content="Sign Up form for Soul Foods restaurant">
-    <link rel="icon" href="assets\sign-up-abstract-icon.png" type="image/x-icon">
+    <link rel="icon" href="E:\web-development\web-projects\sign-up-intro-project\assets\sign-up-abstract-icon.png" type="image/x-icon">
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="signupform">
         <a href="//Add the link of the home page here to make the user click on the picture then go to the homepage">
-            <img id="logo" src="assets\resturan-logo.png" height=75px width=150px id="align-me-left">
+            <img id="logo" src="E:\web-development\web-projects\sign-up-intro-project\assets\resturan-logo.png" height=75px width=150px id="align-me-left">
         </a>
-    <form action="index.html" method="POST">
+    <form action="index.html" method="GET">
         <h1 id="sign-up-head">Sign Up</h1>
         <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">To join us, please answer all questions</p>
         <p class="fonting-form-text">Name</p>
@@ -22,38 +22,34 @@
         &#9;
         <label for="SecondName">Second Name</label>
         <input id="SecondName" type="text" name="Second Name" required>
-        <br><br>   
-        <p class="fonting-form-text"> Address</p>
+        <br><br>
+        <label class="fonting-form-text" for="Email">Email</label>
+        <br>
+        <input id="Email" type="text" name="Email" placeholder="ex: myname@example.com" required>
+        <br><br>
+        <p class="fonting-form-text">Password</p>
+        <label for="password">Create a Password</label>
+        <input id="Password" type="password" name="password">
+        <label for="RepaetPassword" required>Repeat the Password</label>
+        <input id="RepeatPassword" type="password" name="repeatPassword">
+        <br><br>
+        <p class="fonting-form-text">Address</p>
         <label for="StreetAddress">
             Street Address
         </label>
         <input id="StreetAddress" type="text" name="Street Address" required>
         &#9;
         <label for="StreetAddress2">
-            Street Address 2
+            Street Address 2<span class="optional">(opt.)</span>
         </label>
-        <input id="StreetAddress2" type="text" name="Street Address2" required>
+        <input id="StreetAddress2" type="text" name="Street Address2" >
         <br><br>
-        <label for="City">
-            City
-        </label>
-        <br>
+        <label for="City">City</label>
         <input id="City" type="text" name="City" required>
-        <br><br>
-        <label for="State/Province">
-            State / Province
-        </label>
-        <br>
-        <input id="State/Province" type="text" name="State/Province" required>
-        <br><br>
-        <label for="postal/zipcode">Postal / Zip code</label>
-        <br>
-        <input id="postal/zipcode" type="number" name="postal/zipcode" required>
-        <br><br>
-        <p>Country</p>
-        <br>
+        &nbsp;&nbsp;&nbsp;
+        <label for="country">Country</label>
         <input list="country" name="country" required>
-            <datalist id="country">
+           <datalist id="country">
             <option value="  " selected>Select a country</option>
             <option value="--">Not Specified</option>
             <option value="AF">Afghanistan</option>
@@ -297,61 +293,25 @@
             <option value="ZW">Zimbabwe</option>
         </datalist>
         <br><br>
-        <label class="fonting-form-text" for="Email">Email</label>
-        <br>
-        <input id="Email" type="text" name="Email" placeholder="ex: myname@example.com" required>
-        <br><br>
-        <label class="fonting-form-text" for="Password">Password</label>
-        <br>
-        <input id="Password" type="password" name="password" required>
-        <br><br>
-        <label for="RepaetPassword">Repeat the Password</label>
-        <br>
-        <input id="RepeatPassword" type="password" name="repeatPassword" required>
-        <br><br>
-        <label for="HomeNumber">Home Number</label>
-        <br>
-        <label for="AreaCodeHN">Area Code</label>
+        <p class="fonting-form-text">Phone Number</p>
+        <label for="PhoneNumberHN" type="number" placeholder="don't forget the area code" required>Home Phone Number</label>
+        <input id="PhoneNumberHN" type="number" name="PhoneNumber" placeholder="don't forget the area code" required>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="PhoneNumberHN">Phone Number</label>
-        <br>
-        <input id="AreaCodeHN" type="number" name="AreaCode" required>
-        <input id="PhoneNumberHN" type="number" name="PhoneNumber" required>
+        <label for="PhoneNumberCL">Cellular Phone Number</label>
+        <input id="PhoneNumberCL" type="number" name="PhoneNumber" placeholder="don't forget the area code" required>
         <br><br>
-        <label for="CellularNumber">Cellular Number</label>
-        <br>
-        <label for="AreaCodeCN">Area Code</label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="PhoneNumberCN">Phone Number</label>
-        <br>
-        <input id="AreaCodeCN" type="number" name="AreaCode" required>
-        <input id="PhoneNumberCN" type="number" name="PhoneNumber" required>
-        <br><br>
-        <label for="WorkNumber">Work Number<span class="optional">(opt.)</span></label>
-        <br>
-        <label for="AreaCodeWN">Area Code</label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="PhoneNumberWN">Phone Number</label>
-        <br>
-        <input id="AreaCodeWN" type="number" name="AreaCode">
-        <input id="PhoneNumberWN" type="number" name="PhoneNumber">
-        <br><br>
-            <p class="fonting-form-text">Gender</p>
+        <p class="fonting-form-text">Gender</p>
              <input type="radio" name="gender" id="male"><label for="male">Male</label>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <input type="radio" name="gender" id="female"><label for="female">Female</label>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <input type="radio" name="gender" id="other"><label for="other">Other</label>
         <br><br>
-        <label for="Website">Website<span class="optional">(opt.)</span></label>
-        <br>
-        <input id="Website" type="text" name="Website">
+        <input id="terms&conditions" type="checkbox" required>
+        <label for="terms&conditions">I agree to the terms and conditions</label>
         <br><br>
         <input id="submitButton" type="submit" value="Sign Up">
     </form>
     </div>
-    <p id="BeAwareSentence">Be Aware!<br>
-        By signing up you agree to our terms of service and privacy policy
-    </p>
 </body>
 </html>
