@@ -18,41 +18,42 @@
         <p class="fonting-form-text">Name</p>
         <label for="FirstName">
             First Name
-        <input id="FirstName" type="text" name="First Name" >
+        <input id="FirstName" type="text" name="First Name" required>
         &#9;
         <label for="SecondName">Second Name</label>
-        <input id="SecondName" type="text" name="Second Name" >
+        <input id="SecondName" type="text" name="Second Name" required>
         <br><br>   
         <p class="fonting-form-text"> Address</p>
         <label for="StreetAddress">
             Street Address
         </label>
-        <input id="StreetAddress" type="text" name="Street Address" >
+        <input id="StreetAddress" type="text" name="Street Address" required>
         &#9;
         <label for="StreetAddress2">
             Street Address 2
         </label>
-        <input id="StreetAddress2" type="text" name="Street Address2" >
+        <input id="StreetAddress2" type="text" name="Street Address2" required>
         <br><br>
         <label for="City">
             City
         </label>
         <br>
-        <input id="City" type="text" name="City" >
+        <input id="City" type="text" name="City" required>
         <br><br>
         <label for="State/Province">
             State / Province
         </label>
         <br>
-        <input id="State/Province" type="text" name="State/Province" >
+        <input id="State/Province" type="text" name="State/Province" required>
         <br><br>
         <label for="postal/zipcode">Postal / Zip code</label>
         <br>
-        <input id="postal/zipcode" type="number" name="postal/zipcode">
+        <input id="postal/zipcode" type="number" name="postal/zipcode" required>
         <br><br>
         <p>Country</p>
         <br>
-        <select>
+        <input list="country" name="country" required>
+            <datalist id="country">
             <option value="  " selected>Select a country</option>
             <option value="--">Not Specified</option>
             <option value="AF">Afghanistan</option>
@@ -294,19 +295,19 @@
             <option value="YU">Yugoslavia</option>
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
-        </select>
+        </datalist>
         <br><br>
         <label class="fonting-form-text" for="Email">Email</label>
         <br>
-        <input id="Email" type="text" name="Email" placeholder="ex: myname@example.com">
+        <input id="Email" type="text" name="Email" placeholder="ex: myname@example.com" required>
         <br><br>
         <label class="fonting-form-text" for="Password">Password</label>
         <br>
-        <input id="Password" type="password" name="password">
+        <input id="Password" type="password" name="password" required>
         <br><br>
         <label for="RepaetPassword">Repeat the Password</label>
         <br>
-        <input id="RepeatPassword" type="password" name="repeatPassword">
+        <input id="RepeatPassword" type="password" name="repeatPassword" required>
         <br><br>
         <label for="HomeNumber">Home Number</label>
         <br>
@@ -314,8 +315,8 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <label for="PhoneNumberHN">Phone Number</label>
         <br>
-        <input id="AreaCodeHN" type="number" name="AreaCode">
-        <input id="PhoneNumberHN" type="number" name="PhoneNumber">
+        <input id="AreaCodeHN" type="number" name="AreaCode" required>
+        <input id="PhoneNumberHN" type="number" name="PhoneNumber" required>
         <br><br>
         <label for="CellularNumber">Cellular Number</label>
         <br>
@@ -323,10 +324,10 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <label for="PhoneNumberCN">Phone Number</label>
         <br>
-        <input id="AreaCodeCN" type="number" name="AreaCode">
-        <input id="PhoneNumberCN" type="number" name="PhoneNumber">
+        <input id="AreaCodeCN" type="number" name="AreaCode" required>
+        <input id="PhoneNumberCN" type="number" name="PhoneNumber" required>
         <br><br>
-        <label for="WorkNumber">Work Number</label>
+        <label for="WorkNumber">Work Number<span class="optional">(opt.)</span></label>
         <br>
         <label for="AreaCodeWN">Area Code</label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -335,7 +336,14 @@
         <input id="AreaCodeWN" type="number" name="AreaCode">
         <input id="PhoneNumberWN" type="number" name="PhoneNumber">
         <br><br>
-        <label for="Website">Website</label>
+            <p class="fonting-form-text">Gender</p>
+             <input type="radio" name="gender" id="male"><label for="male">Male</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="radio" name="gender" id="female"><label for="female">Female</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="radio" name="gender" id="other"><label for="other">Other</label>
+        <br><br>
+        <label for="Website">Website<span class="optional">(opt.)</span></label>
         <br>
         <input id="Website" type="text" name="Website">
         <br><br>
