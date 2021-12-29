@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    /*body*/
+    body{
+      background-image: url("background 2.jpg");
+    }
+    /* Bordered form */
+    form {
+      font: br;
+      max-width: 550px;
+      margin: 50px auto 0 auto;
+      background: rgb(243, 243, 243);
+      padding: 20px;
+      border-radius: 1px;
+      width: 300px;
+    }
+
+    /* Button */
+    button {
+      background-color: #2aa22a;
+      color: white;
+      padding: 14px 20px;
+      margin: 4px ;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    /* img */
+    img.avatar {
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    }
+    /*forgot psw */
+    span.psw {
+      float: center;
+      padding-top: 16px;
+    }
+    /*input */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 10px 10px;
+      margin: 6px 0;
+      display: inline-block;
+      border: 1px solid ;
+      box-sizing: border-box;
+
+    }
+    .container{
+      text-align: center;
+      border-color: #04AA6D;
+      padding-bottom: 0%;
+      font-style: oblique;
+
+    }
+    a{
+
+      display: block;
+      text-align: center;
+      text-decoration: none;
+
+    }
+  </style>
+</head>
+
+<body>
+<form>
+
+    <div class="imgcontainer">
+      <img src="resturan-logo.png" alt="Avatar"  class="avatar" width="300cm" height="125cm">
+    </div>
+
+    <div class="container">
+      <label for="uname"><p style="text-align: left ;"><b>Username</b></p></label>
+      <input type="text" placeholder="Enter Username" name="uname"size="20" required >
+
+      <label for="psw"><p style="text-align: left"><b>Password</b> </p></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit"><a href="CS Project.html" style="color: white ;">Login</a></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" class="cancelbtn"><a href="CS Project.html" style="color: white ;">Cancel</a></button>
+       <b><a href="sign up.html" style="color: black ;">Forgot password ?</a></b></span>
+    </div>
+  </form>
+</body>
+</html>
